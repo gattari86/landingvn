@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dark Spot & Melasma Treatment Van Nuys CA | Daisy MD Care</title>
     <meta name="description" content="Professional dark spot and melasma treatment in Van Nuys, California. See visible fading in as soon as 2 weeks. Expert-guided, medical-grade solutions. Bilingual consultations. Se habla español. Book your free consultation today.">
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+    <!-- End Google Tag Manager -->
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css">
@@ -713,6 +722,10 @@
     </style>
 </head>
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <nav>
         <div class="logo-section">
             <img src="public/images/daisy-logo.png" alt="Daisy MD Care Logo">
@@ -921,6 +934,38 @@
     </footer>
 
     <script>
+        // Google Tag Manager Event Tracking
+        function trackGTMEvent(eventName, eventData = {}) {
+            if (typeof dataLayer !== 'undefined') {
+                dataLayer.push({
+                    'event': eventName,
+                    ...eventData
+                });
+                console.log('GTM Event Tracked:', eventName, eventData);
+            }
+        }
+
+        // Track page view on load
+        document.addEventListener('DOMContentLoaded', function() {
+            trackGTMEvent('page_view', {
+                'page_title': document.title,
+                'page_path': window.location.pathname
+            });
+
+            // Track phone call click
+            const callButton = document.querySelector('a[href^="tel:"]');
+            if (callButton) {
+                callButton.addEventListener('click', function(e) {
+                    trackGTMEvent('phone_call_click', {
+                        'phone_number': this.href,
+                        'button_location': 'final_cta_section',
+                        'timestamp': new Date().toISOString()
+                    });
+                });
+            }
+        });
+
+        // Original FAQ toggle function
         function toggleFaq(element) {
             const answer = element.nextElementSibling;
             const isActive = answer.classList.contains('active');
