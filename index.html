@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Spot & Melasma Treatment Downey CA | Daisy MD Care</title>
+    <meta name="description" content="Professional dark spot and melasma treatment in Downey, California. See visible fading in as soon as 2 weeks. Expert-guided, medical-grade solutions. Bilingual consultations. Se habla español. Book your free consultation today.">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --daisy-teal: #0e3a47;
+            --daisy-teal-dark: #051f2a;
+            --daisy-mint: #6dd1ca;
+            --daisy-aqua: #47a3c2;
+            --light-bg: #f5f9fb;
+            --dark-gray: #2c3e50;
+            --border-gray: #e0e0e0;
+            --white: #ffffff;
+            --accent-success: #2ecc71;
+
+            --space-xs: 8px;
+            --space-sm: 12px;
+            --space-md: 16px;
+            --space-lg: 24px;
+            --space-xl: 32px;
+            --space-2xl: 48px;
+            --space-3xl: 64px;
+            --space-4xl: 80px;
+        }
+
+        body {
+            font-family: 'Raleway', sans-serif;
+            line-height: 1.6;
+            color: var(--dark-gray);
+            background: var(--white);
+        }
+
+        nav {
+            background: var(--white);
+            padding: var(--space-md) var(--space-xl);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+        }
+
+        .logo-section img {
+            height: 45px;
+            width: auto;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--dark-gray);
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--daisy-teal);
+        }
+
+        .hero {
+            background-image:
+                linear-gradient(135deg, rgba(5, 31, 42, 0.65) 0%, rgba(14, 58, 71, 0.6) 50%, rgba(14, 58, 71, 0.7) 100%),
+                url('public/images/hero-background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: var(--white);
+            padding: var(--space-4xl) var(--space-xl);
+            text-align: center;
+            min-height: 680px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: var(--space-2xl);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 20% 50%, rgba(109, 209, 202, 0.15) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 80%, rgba(71, 163, 194, 0.12) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+        }
+
+        .hero h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: var(--space-lg);
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero-subheading {
+            font-size: 1.25rem;
+            font-weight: 400;
+            max-width: 700px;
+            margin-bottom: var(--space-2xl);
+            line-height: 1.7;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-cta-group {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-lg);
+            align-items: center;
+        }
+
+        .hero-cta {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--daisy-aqua) 0%, var(--daisy-mint) 100%);
+            color: var(--white);
+            padding: 18px 48px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 8px 24px rgba(71, 163, 194, 0.3);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .hero-cta:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 32px rgba(71, 163, 194, 0.4);
+        }
+
+        .hero-note {
+            font-size: 0.95rem;
+            max-width: 600px;
+            font-weight: 400;
+            line-height: 1.6;
+        }
+
+        .before-after-gallery {
+            background: var(--light-bg);
+            padding: var(--space-4xl) var(--space-xl);
+        }
+
+        .gallery-title {
+            font-size: 2.2rem;
+            color: var(--daisy-teal);
+            text-align: center;
+            margin-bottom: var(--space-lg);
+        }
+
+        .gallery-subtitle {
+            text-align: center;
+            color: var(--dark-gray);
+            margin-bottom: var(--space-3xl);
+            font-size: 1.05rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: var(--space-2xl);
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gallery-card {
+            background: var(--white);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .gallery-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+        }
+
+        .gallery-card img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .gallery-label {
+            padding: var(--space-lg);
+            text-align: center;
+            background: linear-gradient(135deg, rgba(14, 58, 71, 0.05) 0%, rgba(109, 209, 202, 0.05) 100%);
+            font-weight: 600;
+            color: var(--daisy-teal);
+            font-size: 0.95rem;
+        }
+
+        .value-prop {
+            background: var(--white);
+            padding: var(--space-4xl) var(--space-xl);
+            text-align: center;
+        }
+
+        .value-prop h2 {
+            font-size: 2.2rem;
+            color: var(--daisy-teal);
+            margin-bottom: var(--space-3xl);
+        }
+
+        .value-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--space-2xl);
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .value-card {
+            background: var(--light-bg);
+            padding: var(--space-2xl);
+            border-radius: 8px;
+            border-left: 4px solid var(--daisy-teal);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s;
+        }
+
+        .value-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .value-icon {
+            font-size: 2.5rem;
+            color: var(--daisy-teal);
+            margin-bottom: var(--space-md);
+        }
+
+        .value-card h3 {
+            font-size: 1.4rem;
+            color: var(--daisy-teal);
+            margin-bottom: var(--space-md);
+        }
+
+        .value-card p {
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        .results-section {
+            padding: var(--space-4xl) var(--space-xl);
+            background: var(--light-bg);
+        }
+
+        .results-section h2 {
+            font-size: 2.2rem;
+            text-align: center;
+            color: var(--daisy-teal);
+            margin-bottom: var(--space-3xl);
+        }
+
+        .results-claim {
+            background: linear-gradient(135deg, rgba(14, 58, 71, 0.08) 0%, rgba(109, 209, 202, 0.08) 100%);
+            border-left: 4px solid var(--daisy-teal);
+            border-radius: 8px;
+            padding: var(--space-2xl);
+            max-width: 800px;
+            margin: 0 auto var(--space-2xl);
+        }
+
+        .results-claim h3 {
+            font-size: 1.5rem;
+            color: var(--daisy-teal);
+            margin-bottom: var(--space-md);
+            display: flex;
+            align-items: center;
+            gap: var(--space-md);
+            justify-content: center;
+        }
+
+        .results-icon {
+            font-size: 1.8rem;
+            color: var(--accent-success);
+        }
+
+        .results-claim p {
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+
+        .highlight-two-weeks {
+            font-weight: 700;
+            color: var(--daisy-mint);
+            background: rgba(109, 209, 202, 0.15);
+            padding: 2px 8px;
+            border-radius: 4px;
+            display: inline-block;
+        }
+
+        .testimonials-section {
+            background: var(--white);
+            padding: var(--space-4xl) var(--space-xl);
+        }
+
+        .testimonials-section h2 {
+            font-size: 2.2rem;
+            text-align: center;
+            color: var(--daisy-teal);
+            margin-bottom: var(--space-3xl);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--space-2xl);
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .testimonial-card {
+            background: var(--light-bg);
+            padding: var(--space-2xl);
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-lg);
+        }
+
+        .stars {
+            color: #ffc107;
+            font-size: 1.2rem;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            font-size: 1rem;
+            line-height: 1.7;
+            color: var(--dark-gray);
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--daisy-teal);
+        }
+
+        .expertise-section {
+            background: var(--light-bg);
+            padding: var(--space-4xl) var(--space-xl);
+        }
+
+        .expertise-section h2 {
+            font-size: 2.2rem;
+            text-align: center;
+            color: var(--daisy-teal);
+            margin-bottom: var(--space-3xl);
+        }
+
+        .expertise-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: var(--space-2xl);
+        }
+
+        .expertise-item {
+            background: var(--white);
+            padding: var(--space-2xl);
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .expertise-icon {
+            font-size: 2.5rem;
+            color: var(--daisy-mint);
+            margin-bottom: var(--space-md);
+        }
+
+        .expertise-item h3 {
+            font-size: 1.3rem;
+            color: var(--daisy-teal);
+            margin-bottom: var(--space-md);
+        }
+
+        .expertise-item p {
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        .process-section {
+            background: var(--white);
+            padding: var(--space-4xl) var(--space-xl);
+        }
+
+        .process-section h2 {
+            font-size: 2.2rem;
+            text-align: center;
+            color: var(--daisy-teal);
+            margin-bottom: var(--space-3xl);
+        }
+
+        .process-timeline {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--space-2xl);
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .process-step {
+            background: var(--light-bg);
+            padding: var(--space-2xl);
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            position: relative;
+        }
+
+        .process-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background: var(--daisy-teal);
+            color: var(--white);
+            border-radius: 50%;
+            font-weight: 700;
+            font-size: 1.5rem;
+            margin-bottom: var(--space-lg);
+        }
+
+        .process-step h4 {
+            font-size: 1.2rem;
+            color: var(--daisy-teal);
+            margin-bottom: var(--space-md);
+        }
+
+        .faq-section {
+            background: var(--light-bg);
+            padding: var(--space-4xl) var(--space-xl);
+        }
+
+        .faq-section h2 {
+            font-size: 2.2rem;
+            text-align: center;
+            color: var(--daisy-teal);
+            margin-bottom: var(--space-3xl);
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            margin-bottom: var(--space-lg);
+            border: 1px solid var(--border-gray);
+            border-radius: 8px;
+            overflow: hidden;
+            background: var(--white);
+        }
+
+        .faq-question {
+            padding: var(--space-lg);
+            background: var(--white);
+            cursor: pointer;
+            font-weight: 600;
+            color: var(--daisy-teal);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.3s;
+        }
+
+        .faq-question:hover {
+            background: var(--light-bg);
+        }
+
+        .faq-answer {
+            padding: var(--space-lg);
+            background: var(--light-bg);
+            display: none;
+        }
+
+        .faq-answer.active {
+            display: block;
+        }
+
+        .final-cta-section {
+            background: linear-gradient(135deg, var(--daisy-teal-dark) 0%, var(--daisy-teal) 100%);
+            color: var(--white);
+            padding: var(--space-4xl) var(--space-xl);
+            text-align: center;
+        }
+
+        .final-cta-section h2 {
+            font-size: 2rem;
+            margin-bottom: var(--space-xl);
+        }
+
+        .final-cta-section p {
+            font-size: 1.1rem;
+            margin-bottom: var(--space-2xl);
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-lg);
+            justify-content: center;
+        }
+
+        .cta-button {
+            padding: 16px 40px;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .cta-primary {
+            background: var(--daisy-mint);
+            color: var(--dark-gray);
+            box-shadow: 0 8px 24px rgba(109, 209, 202, 0.3);
+        }
+
+        .cta-primary:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 32px rgba(109, 209, 202, 0.4);
+        }
+
+        .cta-secondary {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid var(--white);
+        }
+
+        .cta-secondary:hover {
+            transform: translateY(-4px);
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .location-languages {
+            background: var(--light-bg);
+            padding: var(--space-2xl) var(--space-xl);
+            text-align: center;
+            border-top: 1px solid var(--border-gray);
+            border-bottom: 1px solid var(--border-gray);
+        }
+
+        .location-languages p {
+            font-size: 1rem;
+            color: var(--daisy-teal);
+            font-weight: 600;
+            margin-bottom: var(--space-md);
+        }
+
+        footer {
+            background: var(--dark-gray);
+            color: var(--white);
+            padding: var(--space-2xl) var(--space-xl);
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 1024px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .value-cards {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                padding: var(--space-md) var(--space-lg);
+            }
+
+            .logo-section img {
+                height: 38px;
+            }
+
+            .hero {
+                padding: var(--space-3xl) var(--space-lg);
+                min-height: auto;
+                background-image: none;
+                background-color: var(--daisy-teal);
+            }
+
+            .hero h1 {
+                font-size: 2.7rem;
+            }
+
+            .hero-subheading {
+                font-size: 1rem;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-cta {
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .before-after-gallery,
+            .value-prop,
+            .results-section,
+            .testimonials-section,
+            .expertise-section,
+            .process-section,
+            .faq-section,
+            .final-cta-section {
+                padding: var(--space-3xl) var(--space-lg);
+            }
+
+            .expertise-content {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-title,
+            .value-prop h2,
+            .results-section h2,
+            .testimonials-section h2,
+            .expertise-section h2,
+            .process-section h2,
+            .faq-section h2,
+            .final-cta-section h2 {
+                font-size: 1.6rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .cta-button {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2.25rem;
+                margin-bottom: var(--space-md);
+            }
+
+            .hero-subheading {
+                font-size: 0.95rem;
+                margin-bottom: var(--space-lg);
+            }
+
+            .gallery-title,
+            .value-prop h2,
+            .results-section h2,
+            .testimonials-section h2,
+            .expertise-section h2,
+            .process-section h2,
+            .faq-section h2 {
+                font-size: 1.4rem;
+            }
+
+            .hero-cta {
+                padding: 16px 32px;
+                font-size: 0.95rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo-section">
+            <img src="public/images/daisy-logo.png" alt="Daisy MD Care Logo">
+        </div>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Dark Spots Gone in 2 Weeks</h1>
+            <p class="hero-subheading">Professional melasma, dark spot, and hyperpigmentation treatment in Downey, CA. See visible fading fast—backed by 42 years of dermatological expertise. Se habla español.</p>
+
+            <div class="hero-cta-group">
+                <a href="https://www.daisymdcare.com/booking-calendar/free-consultation" class="hero-cta">Book Your Free Consultation</a>
+                <p class="hero-note">Get a personalized dark spot treatment plan with a free professional skin assessment. Book now and see visible results in as soon as 2 weeks.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="before-after-gallery">
+        <h2 class="gallery-title">Real Dark Spot Transformations</h2>
+        <p class="gallery-subtitle">See what professional melasma and dark spot treatment can achieve. Real patients. Real results.</p>
+        <div class="gallery-grid">
+            <div class="gallery-card">
+                <img src="public/images/before-01.png" alt="Melasma treatment before and after - visible spot fading" loading="lazy">
+                <div class="gallery-label">Spots Visibly Faded</div>
+            </div>
+            <div class="gallery-card">
+                <img src="public/images/before-02.png" alt="Professional dark spot treatment showing clear improvement" loading="lazy">
+                <div class="gallery-label">Clear Results Achieved</div>
+            </div>
+            <div class="gallery-card">
+                <img src="public/images/patient-05.png" alt="Hyperpigmentation treatment results showing brightened skin tone" loading="lazy">
+                <div class="gallery-label">Even Skin Tone Restored</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="value-prop">
+        <h2>Why Daisy MD Care for Dark Spot Treatment</h2>
+        <div class="value-cards">
+            <div class="value-card">
+                <div class="value-icon"><i class="fas fa-star"></i></div>
+                <h3>42 Years of Expertise</h3>
+                <p>Since 1979, we've specialized in treating melasma, dark spots, and hyperpigmentation. Our proven track record delivers fast, visible results.</p>
+            </div>
+            <div class="value-card">
+                <div class="value-icon"><i class="fas fa-bolt"></i></div>
+                <h3>Rapid Results—2 Week Timeline</h3>
+                <p>Most patients see visible spot fading in as soon as 2 weeks. That's fast, real results—not empty promises.</p>
+            </div>
+            <div class="value-card">
+                <div class="value-icon"><i class="fas fa-microscope"></i></div>
+                <h3>Medical-Grade Solutions</h3>
+                <p>Professional, dermatologist-backed treatment using state-of-the-art technology. Safe, effective, and results-driven.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="results-section">
+        <h2>Proven Dark Spot Fading Results</h2>
+        <div class="results-claim">
+            <h3><i class="fas fa-check-circle results-icon"></i> Visible Spot Fading in as Soon as <span class="highlight-two-weeks">2 Weeks</span></h3>
+            <p>This isn't just marketing—it's a verified outcome from thousands of patients who've achieved clear, even skin tone. Our advanced dark spot and melasma treatments combine cutting-edge technology with decades of clinical expertise to fade spots faster than you'd expect.</p>
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <h2>What Our Patients Say About Their Results</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"Finally found a treatment that actually works! The team at Daisy MD Care is professional and knowledgeable. My skin has never looked better."</p>
+                <p class="testimonial-author">- Maria G., Downey, CA</p>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"I've tried everything, but nothing worked until I came to Daisy MD Care. The personalized approach and real expertise made all the difference."</p>
+                <p class="testimonial-author">- James R., Los Angeles, CA</p>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"They really listen and understand what you're going through. The results are incredible, and the staff is so welcoming."</p>
+                <p class="testimonial-author">- Sofia L., Downey, CA</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="expertise-section">
+        <h2>Our Dark Spot Treatment Approach</h2>
+        <div class="expertise-content">
+            <div class="expertise-item">
+                <div class="expertise-icon"><i class="fas fa-microscope"></i></div>
+                <h3>Expert Assessment</h3>
+                <p>We diagnose the type and cause of your dark spots—melasma, sun spots, or post-inflammatory hyperpigmentation—to create the right treatment strategy.</p>
+            </div>
+            <div class="expertise-item">
+                <div class="expertise-icon"><i class="fas fa-laser"></i></div>
+                <h3>Advanced Therapies</h3>
+                <p>We use professional-grade treatments proven to fade dark spots fast. Medical-grade skincare combined with specialized in-office treatments deliver visible results.</p>
+            </div>
+            <div class="expertise-item">
+                <div class="expertise-icon"><i class="fas fa-shield"></i></div>
+                <h3>Lasting Maintenance</h3>
+                <p>We provide an ongoing skincare plan to maintain your clear skin and prevent dark spots from returning. Real, lasting results.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="process-section">
+        <h2>Your Path to Clear, Even Skin</h2>
+        <div class="process-timeline">
+            <div class="process-step">
+                <div class="process-number">1</div>
+                <h4>Free Consultation</h4>
+                <p>Book your free assessment. We evaluate your dark spots and create a customized treatment plan specifically for your skin.</p>
+            </div>
+            <div class="process-step">
+                <div class="process-number">2</div>
+                <h4>Start Treatment</h4>
+                <p>Begin your professional dark spot and melasma treatment with expert guidance and medical-grade solutions tailored to you.</p>
+            </div>
+            <div class="process-step">
+                <div class="process-number">3</div>
+                <h4>See Results</h4>
+                <p>Watch your dark spots fade. Most patients see visible improvement in 2 weeks. Dramatic clearing continues at 4-6 weeks.</p>
+            </div>
+            <div class="process-step">
+                <div class="process-number">4</div>
+                <h4>Maintain Clarity</h4>
+                <p>Keep your skin clear with a personalized maintenance plan. We ensure your results last and prevent future dark spots.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span>How quickly will dark spots fade?</span> <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Most patients see visible spot fading in as soon as 2 weeks. Significant improvement continues through 4-6 weeks, depending on the severity and type of dark spots.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span>What causes dark spots and melasma?</span> <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Dark spots are caused by sun damage, genetics, age, hormones, or post-inflammatory hyperpigmentation. Melasma is a specific type triggered by sun exposure and hormonal changes. We identify your cause and treat accordingly.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span>Is dark spot treatment safe for all skin types?</span> <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes. Our treatments are customized for every skin type and tone. During your free consultation, we assess your skin and ensure the treatment is perfectly safe and effective for you.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span>Do you serve bilingual patients?</span> <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, se habla español. Our team is fluent in both English and Spanish to ensure clear communication and comfort for all our patients.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span>What makes Daisy MD Care different?</span> <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>With 42 years of specialized experience treating dark spots and melasma, we combine expert knowledge with cutting-edge medical-grade treatments. Fast results. Real expertise. Personalized care.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span>Will my dark spots come back?</span> <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Your consultation includes a personalized post-treatment maintenance plan to keep skin clear and prevent dark spots from returning. With proper care and sun protection, your results can last long-term.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="location-languages">
+        <p>7700 Imperial Hwy. Suite B3, Downey, CA. 90242 | Se habla español</p>
+    </section>
+
+    <section class="final-cta-section" id="contact">
+        <h2>Ready for Clear, Even Skin?</h2>
+        <p>Don't let dark spots hold you back. Book your free consultation today. Our experts will evaluate your spots and create a personalized treatment plan to fade them fast—as soon as 2 weeks.</p>
+        <div class="cta-buttons">
+            <a href="https://www.daisymdcare.com/booking-calendar/free-consultation" class="cta-button cta-primary">Book Free Consultation</a>
+            <a href="tel:+1-877-877-3030" class="cta-button cta-secondary">Call: (877) 877-3030</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Daisy MD Care. Professional Dark Spot & Melasma Treatment in Downey, California. All rights reserved.</p>
+        <p style="margin-top: 12px;">Visit our website at <a href="https://www.daisymdcare.com" style="color: var(--daisy-mint); text-decoration: none;">www.daisymdcare.com</a></p>
+    </footer>
+
+    <script>
+        function toggleFaq(element) {
+            const answer = element.nextElementSibling;
+            const isActive = answer.classList.contains('active');
+
+            document.querySelectorAll('.faq-answer').forEach(item => {
+                item.classList.remove('active');
+                item.parentElement.querySelector('.faq-question span:last-child').textContent = '+';
+            });
+
+            if (!isActive) {
+                answer.classList.add('active');
+                element.querySelector('span:last-child').textContent = '−';
+            }
+        }
+    </script>
+</body>
+</html>
